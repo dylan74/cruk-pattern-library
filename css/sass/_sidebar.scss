@@ -1,0 +1,32 @@
+// Sidebar Styles
+
+.sidebar{
+  // background: $light-grey;
+}
+.sidebar__header{
+
+}
+.sidebar__items{
+  color: $dark-grey;
+  padding: 50px 0 0;
+
+  li{
+    border: 1px solid $black;
+    border-radius: 5px;
+    list-style: none;
+    padding: 8px 15px;
+    text-align: center;
+    margin: 10px auto;
+    width: 75%;
+    @extend  %dark-grey-hover;
+  }
+  a{
+    text-decoration: none;
+    color: $dark-grey;
+
+  }
+}
+// // SG-sidebar pushing clearfix up fix
+// .sg-sidebar {
+//   top: $header-height !important;
+// }

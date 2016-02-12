@@ -1,0 +1,51 @@
+@import '_variables';
+@import '_header';
+@import '_sidebar';
+@import '_footer';
+@import '_pattern-styles';
+
+// Global Styles
+
+html {
+  font-family: $paragraph-font;
+}
+body{
+  background: #f5f5f5;
+}
+h1{
+  font-family: $main-header-font;
+  font-size: 28px;
+}
+h2{
+  font-family: $main-header-font;
+  font-size: 21px;
+}
+h3{
+  font-family: $small-header-font;
+  font-size: 16px;
+}
+h4{
+  font-family: $small-header-font;
+  font-size: 14px;
+}
+p{
+  font-family: $paragraph-font;
+  font-size: 14px;
+}
+a{
+  color: $dark-blue;
+  line-height: 1.5;
+}
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+h1, h2, h3, h4, p {
+  color: $black;
+  line-height: 1.5;
+}
+
+// Helper Classes
+
+.white{
+  color: $white;
+}

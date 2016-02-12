@@ -1,0 +1,41 @@
+// Variables
+
+// Colours
+$white: #ffffff;
+$dark-blue: #2e008b;
+$med-grey: #c8c9c7;
+$pink: #ec008c;
+$light-blue: #00b6ed;
+$dark-grey: #666666;
+$light-grey: #e3e3e3;
+
+$black: #333333;
+$hover-pink: #F033A3;
+
+// Sizes
+$wrapper-width : 1300px;
+$header-height: 75px;
+
+// Fonts
+$main-header-font: "MuseoSansRounded-700","MuseoSans-700","Arial","Helvetica",sans-serif;
+$small-header-font: "MuseoSans-700","Arial","Helvetica",sans-serif;
+$paragraph-font: "Arial",sans-serif;
+
+
+//Mixins
+@mixin dark-grey-hover {
+    &:hover {
+      background: $black;
+    }
+}
+
+// Extends
+%dark-grey-hover {
+  &:hover{
+    background: $dark-grey;
+    color: $white;
+    a{
+      color: $white;
+    }
+  }
+}

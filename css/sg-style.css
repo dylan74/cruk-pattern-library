@@ -1,0 +1,379 @@
+/* -------------------------------------------------------------------------
+
+ Style Guide Boilerplate
+ Repo: https://github.com/bjankord/Style-Guide-Boilerplate
+ Author: Brett Jankord
+ License: MIT
+
+---------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------
+ Layout
+---------------------------------------------------------------------------- */
+/* http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.sg-header {
+  background: #000;
+  color: #fff;
+  padding-bottom: 0.75rem;
+  padding-bottom: 12px; /* For older browsers */
+  padding-top: 0.75rem;
+  padding-top: 12px; /* For older browsers */
+}
+
+.sg-info,
+.sg-section-group {
+  padding-bottom: 32px; /* For older browsers */
+  padding-bottom: 2rem;
+}
+
+.sg-wrapper {
+  position: relative; /* Used to help sidebar height go all the way down the page */
+  clear: both;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.sg-main,
+.sg-sidebar {
+  padding-top: 24px; /* For older browsers */
+  padding-top: 1.5rem;
+  padding-bottom: 16px; /* For older browsers */
+  padding-bottom: 1rem;
+  clear: both;
+}
+
+
+.js .sg-sidebar {
+  opacity: 0;
+  position: absolute;
+  top: -100%;
+  -webkit-transition: opacity 0.6s ease-out;
+     -moz-transition: opacity 0.6s ease-out;
+      -ms-transition: opacity 0.6s ease-out;
+       -o-transition: opacity 0.6s ease-out;
+          transition: opacity 0.6s ease-out;
+}
+
+.js.nav-is-active .sg-sidebar {
+  opacity: 1;
+  position: static;
+}
+
+@media screen and (min-width: 1025px) {
+  .sg-sidebar,
+  .js .sg-sidebar,
+  .js.nav-is-active .sg-sidebar {
+    bottom: 0;
+    float: left;
+    font-size: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 20%;
+  }
+
+  .sg-main {
+    float: right;
+    width: 80%;
+  }
+}
+
+/* -------------------------------------------------------------------------
+ Utility Classes
+---------------------------------------------------------------------------- */
+.sg-container {
+  padding: 0 16px; /* For older browsers */
+  padding: 0 1rem;
+}
+
+.sg-container:before,
+.sg-container:after,
+.sg-clearfix:before,
+.sg-clearfix:after,
+.sg-section:before,
+.sg-section:after,
+.sg-markup-controls:before,
+.sg-markup-controls:after{
+  content:"";
+  display:table;
+  line-height:0
+}
+
+.sg-container:after,
+.sg-clearfix:after,
+.sg-section:after,
+.sg-markup-controls:after {
+  clear: both;
+}
+
+.sg-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sg-visually-hidden-focusable:active,
+.sg-visually-hidden-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* -------------------------------------------------------------------------
+ Modules
+---------------------------------------------------------------------------- */
+
+/* Branding
+---------------------------------------------------------------------------- */
+
+.sg-logo-full {
+  display: none;
+}
+
+.sg-logo em {
+  font-style: normal;
+}
+
+@media screen and (min-width: 650px) {
+  .sg-logo-initials {
+    display: none;
+  }
+
+  .sg-logo-full {
+    display: inline;
+  }
+}
+
+/* Navigation
+---------------------------------------------------------------------------- */
+.sg-nav-toggle {
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #7C7C7C;
+  color: #fff;
+  float: right;
+  font-size: 16px;
+  font-size: 1rem;
+  padding: 5px 8px; /* For older browsers */
+  padding: 0.3125rem 0.5rem;
+  text-decoration: none;
+  -webkit-transition: all .15s ease-in;
+     -moz-transition: all .15s ease-in;
+      -ms-transition: all .15s ease-in;
+       -o-transition: all .15s ease-in;
+          transition: all .15s ease-in;
+}
+
+.sg-nav-toggle:hover {
+  border-color: #9c9c9c;
+}
+
+@media screen and (min-width: 1025px) {
+  .sg-nav-toggle {
+    display: none;
+  }
+}
+
+.sg-nav-group,
+.sg-nav-group li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sg-nav-group li {
+  margin-bottom: .5em;
+}
+
+.sg-nav-group a,
+.sg-nav-group a:visited {
+  border-left: 2px solid transparent;
+  display: block;
+  font-size: 1.2em;
+  padding: .35em 0 .35em .5em;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .15s ease-in;
+     -moz-transition: all .15s ease-in;
+      -ms-transition: all .15s ease-in;
+       -o-transition: all .15s ease-in;
+          transition: all .15s ease-in;
+}
+
+.sg-nav-group a:hover,
+.sg-nav-group a:focus {
+  background: #565656;
+  border-left: 2px solid #939393;
+  color: #fff;
+}
+
+.sg-nav-group .sg-subnav-parent {
+  margin: 2.5em 0;
+}
+
+.sg-nav-group:first-child > .sg-subnav-parent {
+  margin-top: 0;
+}
+
+/* Buttons
+---------------------------------------------------------------------------- */
+.sg-btn {
+  background: #cbcbcb;
+  border: none;
+  color: #222;
+  float: left;
+  font-size: 16px; /* For older browsers */
+  font-size: 1rem;
+  padding: .5em .9em;
+  text-decoration: none;
+}
+
+.sg-btn--top {
+  float: right;
+}
+
+.sg-btn--source,
+.sg-btn--select {
+  display: none;
+}
+
+/* Show specific buttons we cut the mustard */
+.sg-enhanced .sg-btn--source {
+  display: block;
+}
+
+@media screen and (min-width: 1025px) {
+  .sg-enhanced .sg-btn--select {
+    display: block;
+  }
+}
+
+.sg-btn--select {
+  border-radius: 0 0.2em;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  z-index: 1;
+}
+
+.sg-btn--select-active:hover:after{
+  background: #111; /* For older browsers */
+  background: rgba(0,0,0,.8);
+  border-radius: 5px;
+  color: #fff;
+  content: "Selected code ready to be copied";
+  display: block;
+  padding: 8px 16px; /* For older browsers */
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 8px; /* For older browsers */
+  right: 0.5rem;
+  top: 48px; /* For older browsers */
+  top: 3rem;
+  white-space: nowrap;
+  z-index: 98;
+}
+
+.sg-btn--select-active:hover:before{
+  border-color: transparent transparent #111 transparent;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  content: "";
+  display: block;
+  height: 0;
+  left: 45%;
+  position: absolute;
+  top: 40px;
+  top: 2.5rem;
+  width: 0;
+  z-index: 99;
+}
+
+
+/* Markup
+---------------------------------------------------------------------------- */
+.sg-doc {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+.sg-markup-controls {
+  padding-top: 1.5em;
+}
+
+.sg-source {
+  position: relative;
+}
+
+.sg-source pre {
+  background: #333;
+  border-radius: .5em;
+  border: 1px solid #ddd;
+  color: #fff;
+  overflow-x: scroll;
+  padding: .5em .3em;
+}
+
+.sg-source pre code {
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide source code blocks off-screen */
+.sg-enhanced .sg-source {
+  opacity: 0;
+  position: absolute;
+  top: -100%;
+  width: 1px;
+  -webkit-transition: opacity 0.6s ease-out;
+     -moz-transition: opacity 0.6s ease-out;
+      -ms-transition: opacity 0.6s ease-out;
+       -o-transition: opacity 0.6s ease-out;
+          transition: opacity 0.6s ease-out;
+}
+
+/* Show source code blocks when active or JS is not enabled */
+.sg-enhanced .sg-source-active {
+  opacity: 1;
+  position: relative;
+  width: 100%;
+}
+
+/* Videos
+---------------------------------------------------------------------------- */
+.sg-video {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.sg-video video {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}

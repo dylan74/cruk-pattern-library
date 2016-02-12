@@ -1,0 +1,70 @@
+// Header Styles
+
+.header{
+  height: $header-height;
+  box-sizing: content-box;
+  padding: 10px;
+  background: $white;
+}
+.header__container{
+  max-width: $wrapper-width;
+  margin: 0 auto;
+}
+.header__logo{
+  img{
+    display: block;
+    float: left;
+    height: $header-height;
+  }
+}
+.header__logo{
+  margin : 0;
+  line-height: $header-height;
+  padding-left: 5%;
+  float: left;
+  font-size: 24px;
+  color: $dark-blue;
+  font-weight: 300;
+}
+.header__buttons{
+  float: right;
+}
+.header__download-links{
+  float: left;
+  margin: 20px 10px;
+  p{
+    display: inline-block;
+    margin: 0;
+    line-height: 30px; //downoad icon height
+  }
+  img{
+    float: left;
+  }
+}
+.resize-pattern {
+  width: 80%;
+  float: right;
+  padding: 10px 0 0 10px;
+  cursor: pointer;
+  max-width: $wrapper-width * .8;
+  margin: 0 auto;
+}
+.resize-pattern__button{
+  float: left;
+  margin: 5px 10px;
+  border: 1px solid $dark-blue;
+  border-radius: 5px;
+  color: $dark-blue;
+  @extend  %dark-grey-hover;
+    p{
+      margin: 5px 15px;
+      font-size: 14px;
+    }
+}
+
+// If resize button clicked and not reset by clicking full
+.body-resized {
+  margin: 0 auto;
+  float: none;
+  border: 1px solid $light-grey;
+}

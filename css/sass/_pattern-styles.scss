@@ -1,0 +1,420 @@
+/* Indiviudal Pattern Styles
+
+  Pattern Contents :
+    1) Wrappers and layout of pattern page
+    2) Buttons
+    3) 
+
+*/
+
+/*
+* 1) Wrappers and layout of pattern page
+*/
+
+.CRUK-wrapper{
+  max-width: 960px;
+}
+// Pattern Titles
+.pattern-title {
+  margin-top: 20px;
+  border-bottom: 1px solid $light-grey;
+}
+.pattern__header {
+  padding-top: 20px;
+   h3{
+     margin-bottom: 10px;
+   }
+}
+
+// Hide Content for Jquery to add on click
+.pattern__code--html, .pattern__code--css, .pattern__code--title-html,.pattern__code--title-css,.pattern__code--title-sass,  .pattern__notes p{
+  display: none;
+}
+
+
+// Show on click
+.pattern{
+  overflow: hidden;
+  clear: both;
+  .show-children{
+  display: block;
+  }
+}
+.pattern__code, .pattern__notes {
+  margin: 20px 0;
+  overflow: hidden;
+  border: 1px solid $light-grey;
+  background: $white;
+}
+// Pattern Code Header
+.pattern__code--header {
+  background: $white;
+  padding: 5px;
+  color: $black;
+  cursor: pointer;
+  margin: 0;
+    &:after {
+      content: '+';
+      font-size: 18px;
+      text-align: right;
+      float: right;
+      line-height: 1em;
+    }
+}
+// Pattern Code Tabs
+.pattern__code--tabs {
+  background: $white;
+  border-top: 1px solid $light-grey;
+  overflow: hidden;
+}
+.prettyprint {
+  border-top: 1px solid $light-grey;
+}
+
+.pattern__code--title-html,.pattern__code--title-css, .pattern__code--title-sass {
+  float: left;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+
+// Code Snippet Display
+.prettyprint {
+  clear: both;
+  padding: 10px;
+  display: none;
+}
+
+/*
+** START OF PATTERN LIBRARY STYLES //
+*/
+.colours-pattern{
+  width: 200px;
+  box-sizing: border-box;
+  margin: 20px;
+  float: left;
+  background: #f5f5f5;
+  border: 1px solid $light-grey;
+  p{
+    padding: 0 20px;
+  }
+}
+.colours-pattern__colour{
+  height: 150px;
+}
+.colours-pattern__colour--white{ background: $white };
+.colours-pattern__colour--dark-blue{ background: $dark-blue };
+.colours-pattern__colour--med-grey{ background: $med-grey };
+.colours-pattern__colour--magenta{ background: $pink };
+.colours-pattern__colour--light-blue{ background: $light-blue };
+.colours-pattern__colour--dark-grey{ background: $dark-grey };
+.colours-pattern__colour--light-grey{ background: $light-grey };
+
+
+
+.pattern__style {
+  padding: 15px 0 5px 0;
+  overflow: hidden;
+}
+
+// Typography
+
+
+h1{
+  font-family: "MuseoSansRounded-700", "MuseoSans-700", "Arial", "Helvetica", sans-serif;
+  font-size: 28px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+// Buttons / Call to actions
+.primary-call-to-action-button {
+  padding: 8px 10px;
+  background-color: $pink;
+  border-radius: 3px;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  font-family: "MuseoSansRounded-700","MuseoSans-700","Arial","Helvetica",sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  min-width: 200px;
+  max-width: 350px;
+  display: inline-block;
+  &:hover{
+    background-color: $hover-pink;
+  }
+}
+.secondary-call-to-action {
+  background: transparent url(http://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/pink-arrow.png) no-repeat 0 2px;
+  float: left;
+  background-position: 0 5px;
+  color: $pink;
+  text-decoration: none;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  &:visited{
+    color: $hover-pink;
+  }
+}
+.large-secondary-call-to-action {
+  background: transparent url(http://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/pink-arrow.png) no-repeat 0 2px;
+  float: left;
+  background-position: 0 5px;
+  color: $pink;
+  text-decoration: none;
+  padding-left: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  &:visited{
+    color: $hover-pink;
+  }
+}
+
+// Links
+
+.header-link-rollover{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+    color: $pink;
+  }
+}
+.title-link-rollover{
+  text-decoration: none;
+  font-weight: bold;
+  &:hover{
+    text-decoration: underline;
+    color: $pink;
+  }
+}
+.inline-link{
+  &:hover{
+    text-decoration: underline;
+    color: $pink;
+  }
+}
+.external-link{
+  &:after {
+    content: url(http://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/cruk-icons/external-link-icons/external-link-text.png);
+      padding-left: 2px;
+  }
+  &:hover{
+    color: $pink;
+  }
+}
+
+// Promos
+
+.hero-section-full {
+    position: relative;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.hero-section-full__image-wrapper{
+  max-height: 360px;
+  overflow: hidden;
+}
+.hero-section-full__image{
+  width: 100%;
+}
+.hero-section-full__caption{
+  background-color: rgba(51,51,51,0.8);
+  bottom: 0px;
+  height: auto;
+  left: 0;
+  margin: 0 10px;
+  position: absolute;
+  right: 0;
+  top: auto;
+  padding: 20px 20px 6px 20px; // Account for 14px margin on bottom of p tag
+}
+.hero-section-full__caption{
+  h2, p{
+      color: $white;
+  }
+  h2{
+    margin-top: 0;
+  }
+}
+// Hero Section Mid
+
+.hero-section-wrapper{
+    position: relative;
+}
+.hero-section-mid {
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.hero-section-mid__image-wrapper{
+  max-height: 350px;
+  overflow: hidden;
+}
+.hero-section-mid__image{
+  width: 100%;
+}
+.hero-section-mid__caption{
+  padding: 20px 20px 6px 20px;
+  background-color: rgba(51,51,51,0.8);
+  bottom: 0px;
+  height: auto;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: auto;
+  margin: 0 10px; // Account for 14px margin on bottom of p tag
+}
+.hero-section-mid__caption{
+
+  h2, p{
+      color: $white;
+      margin-top: 0;
+  }
+}
+
+// Hero sidebar
+
+.hero-section-mid-sidebar {
+  background-color: $dark-blue;
+  padding: 20px;
+  @media (min-width: 640px){
+    height: 350px;
+  }
+  h2, p{
+      color: $white;
+      margin-top: 0;
+  }
+}
+.primary-call-to-action-button--hero-promo {
+  width: 100%;
+  min-width: 150px;
+}
+
+// Promo Tiles
+@media screen and(min-width: 640px){
+  .panel-row-1{
+    display: flex;
+    &.panel-row-1 > div{
+      display: flex;
+    }
+  }
+}
+
+// 3 Panel Promo
+.panel-3 {
+  flex: 1;
+  margin: 10px 0;
+  background: $white;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  overflow: hidden;
+  @media screen and(min-width: 640px){
+    min-height: 420px;
+  }
+}
+.panel-3__header{
+  h1,h2,h3,h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+.panel-3__content{
+  margin: 20px 0;
+}
+
+// 2 Panel Promo
+.panel-2 {
+  flex: 1;
+  margin: 10px 0;
+  background: $white;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  padding: 20px;
+  overflow: hidden;
+  @media screen and(min-width: 640px){
+    min-height: 420px;
+  }
+}
+.panel-2__header{
+  h1,h2,h3,h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}
+.panel-2__image{
+  width: 100%;
+}
+.panel-2__content{
+  margin: 20px 0;
+}
+// 1 Panel 50% with content right
+
+.panel-1-content {
+  flex: 1;
+  margin: 10px 0;
+  background: $white;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.panel-1-content__header{
+  h1,h2,h3,h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 10px // No gutter on tile, to make the 20px padding using this and bootstrap col-md-6 padding
+  }
+}
+.panel-1-content__image{
+  width: 100%;
+}
+.panel-1-content__content{
+  margin: 0 0 20px 0;
+  @media screen and(max-width: 640px){
+    margin-top: 20px;
+  }
+}
+// 1/3 hero 2/3 content
+
+.panel-one-third-hero {
+  flex: 1;
+  margin: 10px 0;
+  background: $white;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+.panel-one-third-hero__header{
+  h1,h2,h3,h4{
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-left: 10px // No gutter on tile, to make the 20px padding using this and bootstrap col-md-6 padding
+  }
+}
+.panel-one-third-hero__image{
+  width: 100%;
+}
+.panel-one-third-hero__content{
+  margin: 0 0 20px 0;
+  @media screen and(max-width: 640px){
+    margin-top: 20px;
+  }
+}
+
+// Pullout Promo Box
+
+.pullout-promo-box{
+  padding: 20px;
+  background: $dark-blue;
+}
