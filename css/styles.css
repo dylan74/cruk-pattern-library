@@ -83,9 +83,11 @@
 
   Pattern Contents :
     1) Wrappers and layout of pattern page
-    2) Buttons
-    3)
-
+    2) Branding Colour Tiles
+    3) Buttons and Call to actions
+    4) Links
+    5) Promos
+    6) Promo Tiles
 */
 /*
 * 1) Wrappers and layout of pattern page
@@ -152,6 +154,9 @@
 /*
 ** START OF PATTERN LIBRARY STYLES //
 */
+/*
+* 1) Branding Colour Tiles
+*/
 .colours-pattern {
   width: 200px;
   box-sizing: border-box;
@@ -196,7 +201,11 @@ h1 {
   color: #333333;
   line-height: 1.5; }
 
+/*
+* 3) Buttons and Call to actions
+*/
 .primary-call-to-action-button {
+  cursor: pointer;
   padding: 8px 10px;
   background-color: #ec008c;
   border-radius: 3px;
@@ -236,6 +245,9 @@ h1 {
   .large-secondary-call-to-action:visited {
     color: #F033A3; }
 
+/*
+* 4) Links
+*/
 .header-link-rollover {
   text-decoration: none; }
   .header-link-rollover:hover {
@@ -260,6 +272,9 @@ h1 {
 .external-link:hover {
   color: #ec008c; }
 
+/*
+* 5) Promos
+*/
 .hero-section-full {
   position: relative;
   border-radius: 3px;
@@ -288,9 +303,6 @@ h1 {
 
 .hero-section-full__caption h2, .hero-section-full__caption p {
   color: #ffffff; }
-
-.hero-section-full__caption h2 {
-  margin-top: 0; }
 
 .hero-section-wrapper {
   position: relative; }
@@ -339,6 +351,9 @@ h1 {
   width: 100%;
   min-width: 150px; }
 
+/*
+* 6) Promo Tiles
+*/
 @media screen and (min-width: 640px) {
   .panel-row-1 {
     display: flex; }
@@ -358,7 +373,6 @@ h1 {
       min-height: 420px; } }
 
 .panel-3__header h1, .panel-3__header h2, .panel-3__header h3, .panel-3__header h4 {
-  margin-top: 0;
   margin-bottom: 20px; }
 
 .panel-3__content {
@@ -436,8 +450,86 @@ h1 {
   padding: 20px;
   background: #2e008b; }
 
+/*
+* 7) Forms
+*/
+input, select, textarea {
+  display: block;
+  margin-top: 5px;
+  height: 40px;
+  border-radius: 3px;
+  border: 2px solid #e3e3e3;
+  padding: 5px;
+  background: #f5f5f5;
+  font-size: 14px; }
+
+input[type=text]:focus, select:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #00b6ed; }
+
+input[type="radio"], input[type="checkbox"] {
+  display: inline-block;
+  height: 15px;
+  margin: 0 5px 0; }
+
+.form-type-checkbox {
+  width: 100%; }
+
+@media screen and (min-width: 641px) {
+  .fapi-form--narrow {
+    width: 460px;
+    margin: auto; } }
+
+fieldset {
+  background: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  clear: both; }
+
+.form-item {
+  margin-top: 15px;
+  overflow: hidden;
+  clear: both; }
+
+.form-type-radio, .form-type-checkbox {
+  float: left;
+  padding: 8px 15px 8px 10px;
+  clear: both;
+  border: 2px solid #e3e3e3;
+  margin: 5px 0;
+  border-radius: 35px; }
+
+.form-type-radios {
+  max-width: 300px;
+  min-width: 200px; }
+
+.form-type-radio--other-button {
+  height: auto;
+  border-radius: 15px; }
+
+.field-prefix {
+  display: block; }
+
+.cruk-addressline1-0 {
+  min-width: 300px; }
+
+.form-type-date-fields .form-item {
+  display: inline-block;
+  margin: 0 10px 0 0; }
+
+.form-type-date-fields input {
+  width: 80px;
+  text-align: center; }
+
+.form-item__textarea {
+  width: 100%;
+  min-height: 100px; }
+
 html {
-  font-family: "Arial", sans-serif; }
+  font-family: "Arial", sans-serif;
+  font-size: 14px; }
 
 body {
   background: #f5f5f5; }
@@ -475,3 +567,17 @@ h1, h2, h3, h4, p {
 
 .white {
   color: #ffffff; }
+
+.strong {
+  font-weight: bold; }
+
+.top-margin {
+  margin-top: 20px; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }

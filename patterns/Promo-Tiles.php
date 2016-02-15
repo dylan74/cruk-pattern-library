@@ -19,7 +19,7 @@
     <div class="pattern">
 
         <div class="pattern__header">
-            <h3>Promo tiles - 2</h3>
+            <h3>Promo tiles - 3</h3>
         </div>
 
 <!-- Pattern styles to demo here -->
@@ -75,28 +75,123 @@
 <!-- HTML Pattern code here, don't forget to escape them (use div class="pattern__code or it will not add the tabs) -->
         <div class="pattern__code">
         <code class="prettyprint pattern__code--html">
-          &lt;h1&gt;H1 = Museo Sans Rounded 700 - 2em = 28px&lt;/h1&gt;
+          &lt;div class="panel-row-1"&gt;<br />
+            &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;<br />
+              &lt;div class="panel-3"&gt;<br />
+                &lt;div class="panel-3__header"&gt;<br />
+                  &lt;h2&gt;&lt;a class="header-link-rollover" href="#"&gt;Heading 21px / 1.5ems&lt;/a&gt;&lt;/h2&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div&gt;<br />
+                  &lt;img class="panel-2__image" src="http://www.cancerresearchuk.org/sites/default/files/styles/cruk_landing_page_promo_thumb_resp_breakpoint_one/public/walk-620x349.jpg?itok=GjJ0cVOQ"&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div&gt;<br />
+                  &lt;p class="panel-3__content"&gt;Personalise a donation page in a few simple steps and ask family and friends to join you in celebrating the life of a loved one.&lt;/p&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;a class="secondary-call-to-action" href="#"&gt;Find out about spotting cancer early&lt;/a&gt;<br />
+              &lt;/div&gt;<br />
+            &lt;/div&gt;<br />
+            &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;<br />
+              &lt;div class="panel-3"&gt;<br />
+                &lt;div class="panel-3__header"&gt;<br />
+                  &lt;h2&gt;&lt;a class="header-link-rollover" href="#"&gt;Heading 21px / 1.5ems&lt;/a&gt;&lt;/h2&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div&gt;<br />
+                  &lt;img class="panel-2__image" src="http://www.cancerresearchuk.org/sites/default/files/styles/cruk_landing_page_promo_thumb_resp_breakpoint_one/public/walk-620x349.jpg?itok=GjJ0cVOQ"&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div&gt;<br />
+                  &lt;p class="panel-3__content"&gt;Personalise a donation page in a few simple steps and ask family and friends to join you in celebrating the life of a loved one.&lt;/p&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;a class="secondary-call-to-action" href="#"&gt;Find out about spotting cancer early&lt;/a&gt;<br />
+              &lt;/div&gt;<br />
+            &lt;/div&gt;<br />
+            &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;<br />
+              &lt;div class="panel-3"&gt;<br />
+                &lt;div class="panel-3__header"&gt;<br />
+                  &lt;h2&gt;&lt;a class="header-link-rollover" href="#"&gt;Heading 21px / 1.5ems&lt;/a&gt;&lt;/h2&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div&gt;<br />
+                  &lt;img class="panel-2__image" src="http://www.cancerresearchuk.org/sites/default/files/styles/cruk_landing_page_promo_thumb_resp_breakpoint_one/public/walk-620x349.jpg?itok=GjJ0cVOQ"&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;div&gt;<br />
+                  &lt;p class="panel-3__content"&gt;Personalise a donation page in a few simple steps and ask family and friends to join you in celebrating the life of a loved one.&lt;/p&gt;<br />
+                &lt;/div&gt;<br />
+                &lt;a class="secondary-call-to-action" href="#"&gt;Find out about spotting cancer early&lt;/a&gt;<br />
+              &lt;/div&gt;<br />
+            &lt;/div&gt;<br />
+<br />
+<br />
+          &lt;/div&gt;
         </code>
 
 <!-- CSS Pattern code here, don't forget to escape the code-->
         <code class="prettyprint pattern__code--css">
-          h1{<br />
-            font-family: "MuseoSansRounded-700", "MuseoSans-700", "Arial", "Helvetica", sans-serif;<br />
-            font-size: 28px;<br />
-            color: #333333;<br />
-            line-height: 1.5;<br />
-          }
+          @media screen and (min-width: 640px){<br />
+            .panel-row-1 &gt; div {<br />
+                display: flex;<br />
+            }<br />
+            .panel-row-1 {<br />
+                display: flex;<br />
+            }<br />
+            .panel-3 {<br />
+                min-height: 420px;<br />
+            }<br />
+            }<br />
+            <br />
+            // 3 Panel Promo<br />
+            .panel-3 {<br />
+              flex: 1;<br />
+              margin: 10px 0;<br />
+              background: #ffffff;<br />
+              border-radius: 3px;<br />
+              border: 1px solid #e3e3e3;<br />
+              padding: 20px;<br />
+              overflow: hidden;<br />
+            }<br />
+            <br />
+            .panel-3__header h1, .panel-3__header h2, .panel-3__header h3, .panel-3__header h4 {<br />
+                margin-bottom: 20px;<br />
+            }<br />
+            .panel-3__content{<br />
+              margin: 20px 0;<br />
+            }<br />
+
+
         </code>
 
 <!-- Sass Pattern code here, don't forget to escape the code-->
         <code class="prettyprint pattern__code--sass">
-            h1{<br />
-              font-family: $main-header-font;<br />
-              font-size: 28px;<br />
-              color: #333333;<br />
-              line-height: 1.5;<br />
-            }
-        </code>
+          @media screen and(min-width: 640px){<br />
+            .panel-row-1{<br />
+              display: flex;<br />
+              &amp;.panel-row-1 &gt; div{<br />
+                display: flex;<br />
+                    }<br />
+                  }<br />
+                }<br />
+                <br />
+                // 3 Panel Promo<br />
+                .panel-3 {<br />
+                  flex: 1;<br />
+                  margin: 10px 0;<br />
+                  background: $white;<br />
+                  border-radius: 3px;<br />
+                  border: 1px solid #e3e3e3;<br />
+                  padding: 20px;<br />
+                  overflow: hidden;<br />
+                  @media screen and(min-width: 640px){<br />
+                    min-height: 420px;<br />
+                  }<br />
+                }<br />
+                .panel-3__header{<br />
+                  h1,h2,h3,h4{<br />
+                    margin-top: 0;<br />
+                    margin-bottom: 20px;<br />
+                  }<br />
+                }<br />
+                .panel-3__content{<br />
+                  margin: 20px 0;<br />
+                }<br />
+                </code>
       </div>
 
       <div class="pattern__notes">
@@ -112,7 +207,7 @@
     <div class="pattern">
 
         <div class="pattern__header">
-            <h3>Promo tiles - 3</h3>
+            <h3>Promo tiles - 2</h3>
         </div>
 
 <!-- Pattern styles to demo here -->

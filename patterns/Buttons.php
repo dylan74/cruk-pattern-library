@@ -49,7 +49,7 @@
         max-width: 360px;<br />
         display: inline-block;<br />
         .primary-call-to-action-button&amp;:hover{<br />
-          background-color: $hover-pink;<br />
+          background-color: #ec008c;<br />
         }<br />
         }
         </code>
@@ -108,13 +108,33 @@
             background: transparent url(http://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/pink-arrow.png) no-repeat 0 2px;<br />
             float: left;<br />
             background-position: 0 5px;<br />
-            color: $pink;<br />
+            color: #ec008c;<br />
             text-decoration: none;<br />
             padding-left: 15px;<br />
             font-weight: bold;<br />
             }
         </code>
 
+<!-- Sass Pattern code here, don't forget to escape the code-->
+                <code class="prettyprint pattern__code--sass">
+                  .primary-call-to-action-button {<br />
+                  padding: 8px 10px;<br />
+                  background-color: $pink;<br />
+                  border-radius: 3px;<br />
+                  text-align: center;<br />
+                  color: $white;<br />
+                  font-size: 16px;<br />
+                  font-family: "MuseoSansRounded-700","MuseoSans-700","Arial","Helvetica",sans-serif;<br />
+                  font-weight: normal;<br />
+                  text-decoration: none;<br />
+                  min-width: 200px;<br />
+                  max-width: 360px;<br />
+                  display: inline-block;<br />
+                  &amp;:hover{<br />
+                    background-color: $hover-pink;<br />
+                  }<br />
+                  }
+                </code>
       </div>
 
 <!-- Pattern notes here -->
@@ -150,14 +170,27 @@
             background: transparent url(http://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/pink-arrow.png) no-repeat 0 2px;<br />
             float: left;<br />
             background-position: 0 5px;<br />
-            color: $pink;<br />
+            color: #ec008c;<br />
             text-decoration: none;<br />
             padding-left: 15px;<br />
             font-weight: bold;<br />
             }
         </code>
-
+        <!-- Sass Pattern code here, don't forget to escape the code-->
+            <code class="prettyprint pattern__code--sass">
+              .secondary-call-to-action {<br />
+              background: transparent url(http://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/pink-arrow.png) no-repeat 0 2px;<br />
+              float: left;<br />
+              background-position: 0 5px;<br />
+              color: $pink;<br />
+              text-decoration: none;<br />
+              padding-left: 15px;<br />
+              font-weight: bold;<br />
+              }
+            </code>
       </div>
+
+    </div>
 
 <!-- Pattern notes here -->
       <div class="pattern__notes">
