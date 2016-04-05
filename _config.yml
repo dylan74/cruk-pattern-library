@@ -1,0 +1,21 @@
+name: "CRUK Pattern Library"
+version: 0.0.1
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  auto_ids: true
+
+permalink: pretty
+source: docs
+baseurl: ""
+
+sass:
+  sass_dir: ../
+  style: compressed
+
+timezone: Europe/London
+
+github:
+  repo: https://github.com/CRUKorg/cruk-pattern-library

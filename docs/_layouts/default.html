@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      {{ page.title }} | {{ site.name }}
+    </title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/scss/docs.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+  </head>
+  <body>
+
+    <header class="masthead" role="banner">
+      <div class="container">
+        <a href="{{ site.baseurl }}/" class="masthead-logo">
+          {{ site.name }}
+        </a>
+
+        <nav class="masthead-nav" role="navigaton" aria-label="Primary">
+          <a class="active" href="{{ site.baseurl }}/">Docs</a>
+          <a href="{{ site.github.repo }}" target="_blank">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      {{ content }}
+
+      <footer class="footer" role="contentinfo">
+        <p><strong>Currently v{{ site.version }}.</strong></p>
+        <small class="text-muted"><a href="http://www.cancerresearchuk.org">Cancer Research UK</a> is a registered charity in England and Wales (1089464), Scotland (SC041666) and the Isle of Man (1103). A company limited by guarantee. Registered company in England and Wales (4325234) and the Isle of Man (5713F). Registered address: Angel Building, 407 St John Street, London EC1V 4AD.</small>
+      </footer>
+    </div>
+
+    <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      anchors.options = {
+        placement: 'left',
+        class: 'anchor-link'
+      };
+      anchors.add(selector);
+    </script>
+  </body>
+</html>
