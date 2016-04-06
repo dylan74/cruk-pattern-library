@@ -86,7 +86,7 @@ module.exports = function(grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:heylookalive/pattern-library.git',
+          remote: 'git@github.com:CRUKorg/cruk-pattern-library.git',
           branch: 'gh-pages'
         }
       }
