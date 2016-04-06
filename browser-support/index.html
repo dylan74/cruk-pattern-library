@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      Browser Support | CRUK Pattern Library
+    </title>
+
+    <link rel="stylesheet" href="/assets/scss/docs.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-precomposed.png">
+    <link rel="icon" href="/favicon.ico">
+  </head>
+  <body>
+
+    <header class="masthead" role="banner">
+      <div class="container">
+        <a href="/" class="masthead-logo">
+          CRUK Pattern Library
+        </a>
+
+        <nav class="masthead-nav" role="navigaton" aria-label="Primary">
+          <a class="active" href="/">Docs</a>
+          <a href="https://github.com/CRUKorg/cruk-pattern-library" target="_blank">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row docs-layout">
+  <div class="col-sm-3">
+    <nav class="list-group docs-menu" role="navigation" aria-label="Secondary">
+  <a class="list-group-item " href="/">
+    Getting started
+  </a>
+  <a class="list-group-item " href="/guidelines/">
+    Coding guidelines
+  </a>
+  <a class="list-group-item active" href="/browser-support/">
+    Browser Support
+  </a>
+</nav>
+
+<nav class="list-group docs-menu" role="navigation" aria-label="Secondary">
+  <a class="list-group-item " href="/colours/">
+    Colours
+  </a>
+</nav>
+
+<nav class="list-group docs-menu" role="navigation" aria-label="Secondary">
+  <a class="list-group-item " href="/scaffolding/">
+    Scaffolding
+  </a>
+  <a class="list-group-item " href="/layout/">
+    Layout
+  </a>
+  <a class="list-group-item " href="/type/">
+    Type
+  </a>
+  <a class="list-group-item " href="/pattern-library/">
+    Pattern Library
+  </a>
+</nav>
+
+  </div>
+  <div class="col-sm-9" role="main">
+    <h1 class="page-title">
+      Browser Support
+    </h1>
+    <div class="markdown-body">
+      <p>Browser &amp; Device Support should be dictated (if possible) by previous years statistics for the project or proposition being worked on. Where this isn’t possible we rely on the following list as a baseline for the Browsers, Versions and Devices we should support.</p>
+
+<h2 id="browsers">Browsers</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <td></td>
+          <th>Chrome</th>
+          <th>Firefox</th>
+          <th>Internet Explorer</th>
+          <th>Opera</th>
+          <th>Safari</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Android</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not Supported</td>
+          <td class="text-muted">N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">iOS</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-muted">N/A</td>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+        </tr>
+        <tr>
+          <th scope="row">Mac OS X</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+        </tr>
+        <tr>
+          <th scope="row">Windows</th>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not Supported</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<h3 id="support-for-internet-explorer-8-and-9">Support for Internet Explorer 8 and 9</h3>
+
+<p>As we implement Bootstrap 3 the same rules apply as to what they support. In short Internet Explorer 8 won’t look quite the same, and 9 will be missing out on a few things. This is where we make use of Plugins to polyfill what’s missing. See <a href="/utilities">Utilities</a>.</p>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th class="col-xs-4">Feature</th>
+          <th class="col-xs-4">Internet Explorer 8</th>
+          <th class="col-xs-4">Internet Explorer 9</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><code>border-radius</code></th>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>box-shadow</code></th>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>transform</code></th>
+          <td class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not supported</td>
+          <td class="text-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Supported, with <code>-ms</code> prefix</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>transition</code></th>
+          <td colspan="2" class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not supported</td>
+        </tr>
+        <tr>
+          <th scope="row"><code>placeholder</code></th>
+          <td colspan="2" class="text-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Not supported</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+      <footer class="footer" role="contentinfo">
+        <p><strong>Currently v0.0.1.</strong></p>
+        <small class="text-muted"><a href="http://www.cancerresearchuk.org">Cancer Research UK</a> is a registered charity in England and Wales (1089464), Scotland (SC041666) and the Isle of Man (1103). A company limited by guarantee. Registered company in England and Wales (4325234) and the Isle of Man (5713F). Registered address: Angel Building, 407 St John Street, London EC1V 4AD.</small>
+      </footer>
+    </div>
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/js/anchor.min.js"></script>
+    <script>
+      var selector = '.markdown-body h2, .markdown-body h3';
+      anchors.options = {
+        placement: 'left',
+        class: 'anchor-link'
+      };
+      anchors.add(selector);
+    </script>
+  </body>
+</html>
