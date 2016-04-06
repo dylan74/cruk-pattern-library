@@ -9,7 +9,7 @@ kramdown:
 
 permalink: pretty
 source: docs
-baseurl: ""
+baseurl: "/cruk-pattern-library"
 
 sass:
   sass_dir: ../
