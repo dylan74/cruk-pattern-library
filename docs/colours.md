@@ -1,7 +1,10 @@
 ---
 layout: page
 title: Colours
+published: true
 ---
+
+![WP_20150319_16_04_44_Pro.jpg]({{site.baseurl}}/docs/WP_20150319_16_04_44_Pro.jpg)
 
 The colours we use form a key part of our branding and identity.
 
