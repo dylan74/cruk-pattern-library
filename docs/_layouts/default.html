@@ -34,7 +34,7 @@
       </div>
     </header>
 
-    <div class="container">
+    <div class="container">{{ site.url }}
       {{ content }}
 
       <footer class="footer" role="contentinfo">
@@ -44,6 +44,7 @@
     </div>
 
     <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/docs.js"></script>
     <script src="{{ site.baseurl }}/assets/js/anchor.min.js"></script>
     <script>
       var selector = '.markdown-body h2, .markdown-body h3';
